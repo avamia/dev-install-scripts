@@ -2,7 +2,7 @@
 
 ## Install Networking Tools
 sudo apt update
-sudo apt install net-tools tcpdump nmap -y 
+sudo apt install net-tools tcpdump nmap whois -y 
 
 ## Install and Configure NFS
 sudo apt update
