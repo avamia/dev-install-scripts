@@ -23,7 +23,13 @@ gem install bundler
 gem install rails
 
 ## Install Nodejs
-sudo apt install nodejs npm cmdtest -y
+sudo apt install nodejs npm -y
+
+## Install Yarn
+sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install yarn
 
 ## Install Redis
 sudo apt install redis-server -y
