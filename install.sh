@@ -1,5 +1,8 @@
 #!bin/bash
 
+## Install Tools
+sudo apt install tree -y
+
 ## Install Networking Tools
 sudo apt update
 sudo apt install net-tools tcpdump nmap whois -y 
@@ -41,3 +44,5 @@ sudo echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg m
 sudo apt install libpq-dev postgresql-13 postgresql-client-13 -y
 
 sudo -u postgres createuser -s avamia
+
+
