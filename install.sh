@@ -45,4 +45,15 @@ sudo apt install libpq-dev postgresql-13 postgresql-client-13 -y
 
 sudo -u postgres createuser -s avamia
 
+## Install Terraform
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt install terraform
 
+## Install Ansible
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.8 -y
+sudo apt install python-is-python3 -y
+sudo apt install python3-pip -y
+pip3 install ansible
